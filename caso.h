@@ -1,19 +1,17 @@
 #ifndef CASO_H
 #define CASO_H
-
+/**
+*@brief caso integración por simpson38
+*/
+void caso_simpson38();
 
 /**
-*@brief Caso 1 - e^(x^2)
+*@brief caso de integración por simpson13
 */
-void caso_1_trapecio();
+void caso_simpson13();
 
-
-
-void caso_1_simpson38();
-
-
-void caso_1_simpson();
-
-//Caso 1 error de integracion no polino
-void caso_1_error_np();
+/**
+*@brief caso de integración por romberg
+*/
+void caso_romberg();
 #endif

@@ -4,25 +4,38 @@
 using std::cout;
 using std::endl;
 
+void mostrarMenu();
+void opcionIntegral();
+void opcionDerivacion();
+
+
 int main(int argc, char *argv[]) {
 	int opt;
-	do{
+	opcionIntegral();
+	/*do{
 		mostrarMenu();
 		scanf("%d", &opt);
 		switch(opt){
 			case 1: 
 				opcionIntegral();
 				//Metodos integral
+				break;
 			case 2:
 				opcionDerivacion();
 				//Metodos de derivación
+				break;
 			case 0:
 				printf("Finalizando programa");
-			case default:
+				break;
+			default:
 				printf("Opción invalida");
+				break;
 			
 		}
-	}while(opt!=0);
+		printf("Presione cualquier tecla para continuar...\n");
+		getchar();
+		getchar();
+	}while(opt!=0);*/
 }
 
 void mostrarMenu() {
@@ -32,27 +45,28 @@ void mostrarMenu() {
 	printf("=========================================\n");
 	printf("  1. Calcular Integral                   \n");
 	printf("  2. Calcular Derivacion                 \n");
-	printf("  0. Calcular Derivacion                 \n");
+	printf("  0. Salir				                 \n");
 	printf("=========================================\n");
 	printf("Seleccione una opcion: ");
 }
 
 void opcionIntegral() {
-	system("cls || clear");
 	printf("=========================================\n");
 	printf("        Opcion 1: Calcular Integral      \n");
 	printf("=========================================\n");
-	printf("Esta funcionalidad aun no esta disponible.\n");
-	printf("Presione cualquier tecla para continuar...\n");
-	getchar();
+	printf("Simpson38 con 15 segmentos\n");
+	caso_simpson38();
+	printf("\n=========================================\n");
+	printf("Simpson13 con 16 segmentos\n");
+	caso_simpson13();
+	printf("\n=========================================\n");
+	printf("\nRomberg\n");
+	caso_romberg();
 }
 
 void opcionDerivacion() {
-	system("cls || clear");
 	printf("=========================================\n");
 	printf("       Opcion 2: Calcular Derivacion     \n");
 	printf("=========================================\n");
 	printf("Esta funcionalidad aun no esta disponible.\n");
-	printf("Presione cualquier tecla para continuar...\n");
-	getchar();
 }
