@@ -66,5 +66,8 @@ void opcionDerivacion() {
 	printf("=========================================\n");
 	printf("       Opcion 2: Calcular Derivacion     \n");
 	printf("=========================================\n");
-	printf("Esta funcionalidad aun no esta disponible.\n");
+	printf("Derivaccion con primeras derivadas centrales\n");
+	caso_1_derivadas_centrales();
+	printf("Derivaccion con segundas derivadas centrales\n");
+	caso_2_derivadas_centrales();
 }
