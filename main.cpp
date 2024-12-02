@@ -12,17 +12,15 @@ void opcionDerivacion();
 int main(int argc, char *argv[]) {
 	int opt;
 	opcionIntegral();
-	/*do{
+	do{
 		mostrarMenu();
 		scanf("%d", &opt);
 		switch(opt){
 			case 1: 
 				opcionIntegral();
-				//Metodos integral
 				break;
 			case 2:
 				opcionDerivacion();
-				//Metodos de derivación
 				break;
 			case 0:
 				printf("Finalizando programa");
@@ -35,7 +33,7 @@ int main(int argc, char *argv[]) {
 		printf("Presione cualquier tecla para continuar...\n");
 		getchar();
 		getchar();
-	}while(opt!=0);*/
+	}while(opt!=0);
 }
 
 void mostrarMenu() {
